@@ -1,15 +1,74 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://discord.com/api/oauth2/authorize?client_id=1105041956561748018&permissions=8&scope=bot">
+<head>
+    <title>Weboldal címe</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .scroll-animation {
+            animation: scrollAnimation 1s infinite;
+        }
+        
+        @keyframes scrollAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HUNDev Bot</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Főoldal</a></li>
+                <li><a href="#">Meghívás</a></li>
+                <li><a href="#">Botról</a></li>
+                <li><a href="#">Státusz</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="scroll-animation">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris vel felis finibus feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus venenatis libero ut mauris viverra sollicitudin. Aliquam vel sem vitae orci fringilla consequat. Mauris at dignissim enim, vitae ullamcorper sem. Integer facilisis placerat turpis id hendrerit. Donec vitae metus sem. Pellentesque finibus pellentesque justo, sed tristique est fringilla a.</p>
+    </div>
+    
     <script>
-      window.location.href = "https://discord.com/api/oauth2/authorize?client_id=1105041956561748018&permissions=8&scope=bot"
+        window.addEventListener('scroll', function() {
+            document.querySelector('.scroll-animation').classList.add('scroll-animation');
+        });
     </script>
-    <title>Oldal átirányítása</title>
-  </head>
-  <body>
-    Ha nem irányít át automatikusan, kattintson <a href="https://discord.com/api/oauth2/authorize?client_id=1105041956561748018&permissions=8&scope=bot">ide</a>.
-  </body>
+</body>
 </html>
-
