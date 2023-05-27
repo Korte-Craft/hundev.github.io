@@ -1,0 +1,3 @@
+LINK_A: https://discord.bots.gg/bots/1105041956561748018
+LINK_B: https://botlist.me/users/969278234082562060 "Pending"
+LINK_C: https://discord.me/hundev
