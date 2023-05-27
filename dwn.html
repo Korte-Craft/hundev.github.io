@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Letöltés</title>
+    <script>
+        window.onload = function() {
+            var link = document.createElement("a");
+            link.href = "installer_hundev-manager_BETA.exe";
+            link.download = "installer_hundev-manager_BETA.exe";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
